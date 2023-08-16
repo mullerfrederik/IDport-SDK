@@ -42,13 +42,13 @@ private class Checksums {
 let nexusUrl = "https://nexus3-public.monetplus.cz/repository/ahead-ios-release/com/aheaditec"
 
 let package = Package(
-    name: "IDport-SDK",
+    name: "IDportSDK",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
-            name: "IDport-SDK",
+            name: "IDportSDK",
             targets: [
                 "CommunicatorFramework",
                 "CoreUtilities",
