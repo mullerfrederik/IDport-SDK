@@ -17,6 +17,7 @@ private class Versions {
     static let Nickname = "4.0.1"
     static let AnonymousQR = "4.0.1"
     static let AQRIdentifySupport = "4.0.1"
+    static let WidgetUtils = "4.0.1"
     
     static let Talsec = "0.2.1"
 }
@@ -35,6 +36,7 @@ private class Checksums {
     static let Nickname = "9e3fa49f8f76c63fe5ffc44260ef660c59760f160ce764ed22094f62f40e3ffd"
     static let AnonymousQR = "fb8aaed420c56e8f78ccbd7e7f9fedec4b2a38d33bcba61959c020d94f11b9f5"
     static let AQRIdentifySupport = "5f29ab87a60ac18974d4b18c5db666cb082187e59007c990cd733777ec2be4f3"
+    static let WidgetUtils = "03f91de478e4e0bc9213db3729723619d76e0d08350fc0d135831dcc7a69422f"
     
     static let Talsec = "6dbc8fdfdfbe76bb6cdd957ebbfe762c694e2d59cc2da4cfeba264476fdd62f8"
 }
@@ -63,6 +65,7 @@ let package = Package(
                 "Nickname",
                 "AnonymousQR",
                 "AQRIdentifySupport",
+                "WidgetUtils",
             ]
         )
     ],
@@ -83,6 +86,7 @@ let package = Package(
         .binaryTarget(name: "Nickname", url: assembleUrl("widgetizing", "Nickname", Versions.Nickname), checksum: Checksums.Nickname),
         .binaryTarget(name: "AnonymousQR", url: assembleUrl("widgetizing", "AnonymousQR", Versions.AnonymousQR), checksum: Checksums.AnonymousQR),
         .binaryTarget(name: "AQRIdentifySupport", url: assembleUrl("widgetizing", "AQRIdentifySupport", Versions.AQRIdentifySupport), checksum: Checksums.AQRIdentifySupport),
+        .binaryTarget(name: "WidgetUtils", url: assembleUrl("widgetizing", "WidgetUtils", Versions.WidgetUtils), checksum: Checksums.WidgetUtils),
     ]
 )
 
