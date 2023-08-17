@@ -16,11 +16,11 @@ private class Versions {
     static let CMSDK = "15.0.1"
     
     static let SWTActivationCode = "1.1.0"
-    static let TransactionProcessor = "4.0.1"
-    static let Nickname = "4.0.1"
-    static let AnonymousQR = "4.0.1"
-    static let AQRIdentifySupport = "4.0.1"
-    static let WidgetUtils = "4.0.1"
+    static let TransactionProcessorFramework = "5.0.0"
+    static let NicknameFramework = "5.0.0"
+    static let AnonymousQRFramework = "5.0.0"
+    static let AQRIdentifySupportFramework = "5.0.0"
+    static let WidgetUtilsFramework = "5.0.0"
     
     static let Talsec = "0.2.1"
 }
@@ -38,11 +38,11 @@ private class Checksums {
     static let CMSDK = "089f377b8571648b26c9c3b11c29b66d690c2fc8124497fca0303d68731be151"
     
     static let SWTActivationCode = "ab516582534fa762ec20399a6da1637163f09e2c3bf001fab65c4ce452dfa43e"
-    static let TransactionProcessor = "4da3ea851eb4482aeed719e02d8372bc478346fa380811fb10810c1e8cbe3d5a"
-    static let Nickname = "9e3fa49f8f76c63fe5ffc44260ef660c59760f160ce764ed22094f62f40e3ffd"
-    static let AnonymousQR = "fb8aaed420c56e8f78ccbd7e7f9fedec4b2a38d33bcba61959c020d94f11b9f5"
-    static let AQRIdentifySupport = "5f29ab87a60ac18974d4b18c5db666cb082187e59007c990cd733777ec2be4f3"
-    static let WidgetUtils = "03f91de478e4e0bc9213db3729723619d76e0d08350fc0d135831dcc7a69422f"
+    static let TransactionProcessorFramework = "d944da1bfd1ee288f28d09547a680fe6db27406e1e71b2afe3665dabd712e0c2"
+    static let NicknameFramework = "93878dbef6746a0335394915bf521c7688d69c28b28ea1faf093931d75acdb8e"
+    static let AnonymousQRFramework = "2fb6cfab675dd637bfe32300b0f9bd79ca76f305bbf3cbe4f88aa2175f03e3c7"
+    static let AQRIdentifySupportFramework = "1fa92a810785513bd0477fc297566c0fd55ff7ef3cf58d38e64e8d727ea3501d"
+    static let WidgetUtilsFramework = "5d1fdd5e517cd8e58c73d9c107731bd532fe8189748725712c6e7bfd48d4af50"
     
     static let Talsec = "6dbc8fdfdfbe76bb6cdd957ebbfe762c694e2d59cc2da4cfeba264476fdd62f8"
 }
@@ -70,11 +70,11 @@ let package = Package(
                 "Talsec",
                 "CMSDK",
                 "SWTActivationCode",
-                "TransactionProcessor",
-                "Nickname",
-                "AnonymousQR",
-                "AQRIdentifySupport",
-                "WidgetUtils",
+                "TransactionProcessorFramework",
+                "NicknameFramework",
+                "AnonymousQRFramework",
+                "AQRIdentifySupportFramework",
+                "WidgetUtilsFramework",
             ]
         )
     ],
@@ -94,11 +94,11 @@ let package = Package(
         .binaryTarget(name: "CMSDK", url: assembleUrl("cmsdk", "CMSDK", Versions.CMSDK), checksum: Checksums.CMSDK),
         
         .binaryTarget(name: "SWTActivationCode", url: assembleUrl("widgetizing", "SWTActivationCode", Versions.SWTActivationCode), checksum: Checksums.SWTActivationCode),
-        .binaryTarget(name: "TransactionProcessor", url: assembleUrl("widgetizing", "TransactionProcessor", Versions.TransactionProcessor), checksum: Checksums.TransactionProcessor),
-        .binaryTarget(name: "Nickname", url: assembleUrl("widgetizing", "Nickname", Versions.Nickname), checksum: Checksums.Nickname),
-        .binaryTarget(name: "AnonymousQR", url: assembleUrl("widgetizing", "AnonymousQR", Versions.AnonymousQR), checksum: Checksums.AnonymousQR),
-        .binaryTarget(name: "AQRIdentifySupport", url: assembleUrl("widgetizing", "AQRIdentifySupport", Versions.AQRIdentifySupport), checksum: Checksums.AQRIdentifySupport),
-        .binaryTarget(name: "WidgetUtils", url: assembleUrl("widgetizing", "WidgetUtils", Versions.WidgetUtils), checksum: Checksums.WidgetUtils),
+        .binaryTarget(name: "TransactionProcessorFramework", url: assembleUrl("widgetizing", "TransactionProcessorFramework", Versions.TransactionProcessorFramework), checksum: Checksums.TransactionProcessorFramework),
+        .binaryTarget(name: "NicknameFramework", url: assembleUrl("widgetizing", "NicknameFramework", Versions.NicknameFramework), checksum: Checksums.NicknameFramework),
+        .binaryTarget(name: "AnonymousQRFramework", url: assembleUrl("widgetizing", "AnonymousQRFramework", Versions.AnonymousQRFramework), checksum: Checksums.AnonymousQRFramework),
+        .binaryTarget(name: "AQRIdentifySupportFramework", url: assembleUrl("widgetizing", "AQRIdentifySupportFramework", Versions.AQRIdentifySupportFramework), checksum: Checksums.AQRIdentifySupportFramework),
+        .binaryTarget(name: "WidgetUtilsFramework", url: assembleUrl("widgetizing", "WidgetUtilsFramework", Versions.WidgetUtilsFramework), checksum: Checksums.WidgetUtilsFramework),
     ]
 )
 
