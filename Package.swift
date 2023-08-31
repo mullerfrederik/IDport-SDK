@@ -16,11 +16,12 @@ private class Versions {
     static let CMSDK = "15.0.1"
     
     static let SWTActivationCode = "1.1.0"
-    static let TransactionProcessorFramework = "5.0.0"
-    static let NicknameFramework = "5.0.0"
-    static let AnonymousQRFramework = "5.0.0"
-    static let AQRIdentifySupportFramework = "5.0.0"
-    static let WidgetUtilsFramework = "5.0.0"
+    static let TransactionProcessorFramework = "5.1.1"
+    static let NicknameFramework = "5.1.1"
+    static let AnonymousQRFramework = "5.1.1"
+    static let AQRIdentifySupportFramework = "5.1.1"
+    static let EmailCheckFramework = "5.1.1"
+    static let WidgetUtilsFramework = "5.1.1"
     
     static let Talsec = "0.2.1"
 }
@@ -36,11 +37,12 @@ private class Checksums {
     static let CMSDK = "089f377b8571648b26c9c3b11c29b66d690c2fc8124497fca0303d68731be151"
     
     static let SWTActivationCode = "ab516582534fa762ec20399a6da1637163f09e2c3bf001fab65c4ce452dfa43e"
-    static let TransactionProcessorFramework = "d944da1bfd1ee288f28d09547a680fe6db27406e1e71b2afe3665dabd712e0c2"
-    static let NicknameFramework = "93878dbef6746a0335394915bf521c7688d69c28b28ea1faf093931d75acdb8e"
-    static let AnonymousQRFramework = "2fb6cfab675dd637bfe32300b0f9bd79ca76f305bbf3cbe4f88aa2175f03e3c7"
-    static let AQRIdentifySupportFramework = "1fa92a810785513bd0477fc297566c0fd55ff7ef3cf58d38e64e8d727ea3501d"
-    static let WidgetUtilsFramework = "5d1fdd5e517cd8e58c73d9c107731bd532fe8189748725712c6e7bfd48d4af50"
+    static let TransactionProcessorFramework = "e720ba9d1ae5292bd8c7a6fceb58a1496ab5cca9c25520a393950777488603c9"
+    static let NicknameFramework = "0d1909a52993ccc1bdc0feced41361d3599961e127b6d38c47261745a19194b4"
+    static let AnonymousQRFramework = "8de703ccc6dd22d37de785ab87dddf0175b337401bf2caac8d2281bda2752369"
+    static let AQRIdentifySupportFramework = "fd507cc1829c5bf57043d0ec4b62e0ed56c274e8d097f5d40192a4cb7a6b037a"
+    static let EmailCheckFramework = "9432720bdb90954da272c77d1a4a1b10ee6fd55383165e865478c38ce5bb850e"
+    static let WidgetUtilsFramework = "be2cd6435af7d4e3cc86744caefacd4e31970ccf1f791ff9d3c8d8d80782cd98"
     
     static let Talsec = "6dbc8fdfdfbe76bb6cdd957ebbfe762c694e2d59cc2da4cfeba264476fdd62f8"
 }
@@ -71,6 +73,7 @@ let package = Package(
                 "NicknameFramework",
                 "AnonymousQRFramework",
                 "AQRIdentifySupportFramework",
+                "EmailCheckFramework",
                 "WidgetUtilsFramework",
             ]
         )
@@ -96,6 +99,7 @@ let package = Package(
         .binaryTarget(name: "NicknameFramework", url: assembleUrl("widgetizing", "NicknameFramework", Versions.NicknameFramework), checksum: Checksums.NicknameFramework),
         .binaryTarget(name: "AnonymousQRFramework", url: assembleUrl("widgetizing", "AnonymousQRFramework", Versions.AnonymousQRFramework), checksum: Checksums.AnonymousQRFramework),
         .binaryTarget(name: "AQRIdentifySupportFramework", url: assembleUrl("widgetizing", "AQRIdentifySupportFramework", Versions.AQRIdentifySupportFramework), checksum: Checksums.AQRIdentifySupportFramework),
+        .binaryTarget(name: "EmailCheckFramework", url: assembleUrl("widgetizing", "EmailCheckFramework", Versions.EmailCheckFramework), checksum: Checksums.EmailCheckFramework),
         .binaryTarget(name: "WidgetUtilsFramework", url: assembleUrl("widgetizing", "WidgetUtilsFramework", Versions.WidgetUtilsFramework), checksum: Checksums.WidgetUtilsFramework),
         .target(
             name: "IDportSDK",
