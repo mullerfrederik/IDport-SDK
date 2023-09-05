@@ -22,6 +22,8 @@ private class Versions {
     static let AQRIdentifySupportFramework = "5.1.1"
     static let EmailCheckFramework = "5.1.1"
     static let WidgetUtilsFramework = "5.1.1"
+    static let FederatedLoginFramework = "1.0.0"
+    static let OpenIDConnectFramework = "1.0.0"
     
     static let Talsec = "0.2.1"
 }
@@ -43,6 +45,8 @@ private class Checksums {
     static let AQRIdentifySupportFramework = "fd507cc1829c5bf57043d0ec4b62e0ed56c274e8d097f5d40192a4cb7a6b037a"
     static let EmailCheckFramework = "9432720bdb90954da272c77d1a4a1b10ee6fd55383165e865478c38ce5bb850e"
     static let WidgetUtilsFramework = "be2cd6435af7d4e3cc86744caefacd4e31970ccf1f791ff9d3c8d8d80782cd98"
+    static let FederatedLoginFramework = "4e640c740e5dfadbf2956f89260bf3797a82c7291ff7682ba3ef5923e6ee95ee"
+    static let OpenIDConnectFramework = "24895ba425dce9e9dcf6832a7cb109363e0169e16105968e4ad62ac72bf30b2e"
     
     static let Talsec = "6dbc8fdfdfbe76bb6cdd957ebbfe762c694e2d59cc2da4cfeba264476fdd62f8"
 }
@@ -75,6 +79,8 @@ let package = Package(
                 "AQRIdentifySupportFramework",
                 "EmailCheckFramework",
                 "WidgetUtilsFramework",
+                "FederatedLoginFramework",
+                "OpenIDConnectFramework",
             ]
         )
     ],
@@ -94,7 +100,11 @@ let package = Package(
         .binaryTarget(name: "Talsec", url: assembleUrl("talsec", "Talsec", Versions.Talsec), checksum: Checksums.Talsec),
         .binaryTarget(name: "CMSDK", url: assembleUrl("cmsdk", "CMSDK", Versions.CMSDK), checksum: Checksums.CMSDK),
         
+        .binaryTarget(name: "FederatedLoginFramework", url: assembleUrl("FederatedLogin", "FederatedLoginFramework", Versions.FederatedLoginFramework), checksum: Checksums.FederatedLoginFramework),
+        .binaryTarget(name: "OpenIDConnectFramework", url: assembleUrl("FederatedLogin", "OpenIDConnectFramework", Versions.OpenIDConnectFramework), checksum: Checksums.OpenIDConnectFramework),
+        
         .binaryTarget(name: "SWTActivationCode", url: assembleUrl("widgetizing", "SWTActivationCode", Versions.SWTActivationCode), checksum: Checksums.SWTActivationCode),
+
         .binaryTarget(name: "TransactionProcessorFramework", url: assembleUrl("widgetizing", "TransactionProcessorFramework", Versions.TransactionProcessorFramework), checksum: Checksums.TransactionProcessorFramework),
         .binaryTarget(name: "NicknameFramework", url: assembleUrl("widgetizing", "NicknameFramework", Versions.NicknameFramework), checksum: Checksums.NicknameFramework),
         .binaryTarget(name: "AnonymousQRFramework", url: assembleUrl("widgetizing", "AnonymousQRFramework", Versions.AnonymousQRFramework), checksum: Checksums.AnonymousQRFramework),
