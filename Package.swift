@@ -15,7 +15,7 @@ private class Versions {
     static let TalsecAttestation = "5.0.1"
     static let CMSDK = "15.0.1"
     
-    static let SWTActivationCode = "1.1.0"
+    static let SWTActivationCode = "2.0.0"
     static let TransactionProcessorFramework = "6.0.0"
     static let NicknameFramework = "6.0.0"
     static let AnonymousQRFramework = "6.0.0"
@@ -38,7 +38,7 @@ private class Checksums {
     static let TalsecAttestation = "2164404cd108aac91f21c78930f3534f9a2f380d51f96e5f0a95583b88a0b2e0"
     static let CMSDK = "089f377b8571648b26c9c3b11c29b66d690c2fc8124497fca0303d68731be151"
     
-    static let SWTActivationCode = "ab516582534fa762ec20399a6da1637163f09e2c3bf001fab65c4ce452dfa43e"
+    static let SWTActivationCode = "2bb9e906276a869ac7847d6758c81f1f65283084cb9acaa2d6855c3f662b7b93"
     static let TransactionProcessorFramework = "211163ae385d6dc78eafabedde6b952e7538380fb7f20477716ab16a9067c581"
     static let NicknameFramework = "dfde18c938a52d74208436beba797645a942155ad74d02096bcd7d14cb0ff7c5"
     static let AnonymousQRFramework = "445ceda650fe4b255c7e8ac75db5dac97f4fdb1b143cb0c1f7b569a2024e849f"
@@ -103,7 +103,7 @@ let package = Package(
         .binaryTarget(name: "FederatedLoginFramework", url: assembleUrl("FederatedLogin", "FederatedLoginFramework", Versions.FederatedLoginFramework), checksum: Checksums.FederatedLoginFramework),
         .binaryTarget(name: "OpenIDConnectFramework", url: assembleUrl("FederatedLogin", "OpenIDConnectFramework", Versions.OpenIDConnectFramework), checksum: Checksums.OpenIDConnectFramework),
         
-        .binaryTarget(name: "SWTActivationCode", url: assembleUrl("widgetizing", "SWTActivationCode", Versions.SWTActivationCode), checksum: Checksums.SWTActivationCode),
+        .binaryTarget(name: "SWTActivationCode", url: assembleUrl("MethodManager", "SWTActivationCode", Versions.SWTActivationCode), checksum: Checksums.SWTActivationCode),
 
         .binaryTarget(name: "TransactionProcessorFramework", url: assembleUrl("widgetizing", "TransactionProcessorFramework", Versions.TransactionProcessorFramework), checksum: Checksums.TransactionProcessorFramework),
         .binaryTarget(name: "NicknameFramework", url: assembleUrl("widgetizing", "NicknameFramework", Versions.NicknameFramework), checksum: Checksums.NicknameFramework),
