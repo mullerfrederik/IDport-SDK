@@ -13,7 +13,7 @@ private class Versions {
     static let SecureStorage = "9.0.0"
     static let TalsecCertificatesFramework = "12.4.0"
     static let TalsecAttestation = "5.0.1"
-    static let CMSDK = "15.0.1"
+    static let CMSDK = "15.1.0"
     
     static let SWTActivationCode = "2.0.0"
     static let TransactionProcessorFramework = "6.0.0"
@@ -22,8 +22,8 @@ private class Versions {
     static let AQRIdentifySupportFramework = "6.0.0"
     static let EmailCheckFramework = "6.0.0"
     static let WidgetUtilsFramework = "6.0.0"
-    static let FederatedLoginFramework = "1.0.0"
-    static let OpenIDConnectFramework = "1.0.0"
+    static let FederatedLoginFramework = "1.0.1"
+    static let OpenIDConnectFramework = "1.0.1"
     
     static let Talsec = "0.2.1"
 }
@@ -36,7 +36,7 @@ private class Checksums {
     static let SecureStorage = "5166fa924fa7fc40f55c0d0df8967c00e063df5f1da9ff18f1c8fb8af37e47fd"
     static let TalsecCertificatesFramework = "8c15748c47034d42e6ab41774a15179d4038883147e2e242638e304716ad5ad5"
     static let TalsecAttestation = "2164404cd108aac91f21c78930f3534f9a2f380d51f96e5f0a95583b88a0b2e0"
-    static let CMSDK = "089f377b8571648b26c9c3b11c29b66d690c2fc8124497fca0303d68731be151"
+    static let CMSDK = "3323b345d8ca0f16c7decbca6741227a9458aed23282d5de10e1d88219d568fc"
     
     static let SWTActivationCode = "2bb9e906276a869ac7847d6758c81f1f65283084cb9acaa2d6855c3f662b7b93"
     static let TransactionProcessorFramework = "211163ae385d6dc78eafabedde6b952e7538380fb7f20477716ab16a9067c581"
@@ -45,8 +45,8 @@ private class Checksums {
     static let AQRIdentifySupportFramework = "c5be983e136e5afb61a85fb31cdbb16948d6eedd3124ee09230e81673e330676"
     static let EmailCheckFramework = "c0df2cefab0a80119bdf91c661437688069b59ebc1500080a75f9530a1690207"
     static let WidgetUtilsFramework = "08a3616da383f3d219937aa431dbbfb50e9a22735226cb2a5364988a73c0d839"
-    static let FederatedLoginFramework = "4e640c740e5dfadbf2956f89260bf3797a82c7291ff7682ba3ef5923e6ee95ee"
-    static let OpenIDConnectFramework = "24895ba425dce9e9dcf6832a7cb109363e0169e16105968e4ad62ac72bf30b2e"
+    static let FederatedLoginFramework = "4df0b25b07fc94216cbedcf53fa5316176469dbe5ec5f1e68856344ef8df1733"
+    static let OpenIDConnectFramework = "a346027f8e00804ab98207561488364667fd40554b7d32cfddcaf1b5bc3eda51"
     
     static let Talsec = "6dbc8fdfdfbe76bb6cdd957ebbfe762c694e2d59cc2da4cfeba264476fdd62f8"
 }
