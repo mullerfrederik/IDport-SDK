@@ -64,7 +64,6 @@ let package = Package(
         .library(
             name: "IDportSDK",
             targets: [
-                "IDportSDK",
                 "CommunicatorFramework",
                 "CoreUtilities",
                 "JWECrypto",
